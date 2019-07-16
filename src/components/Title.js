@@ -1,8 +1,8 @@
-class Title extends React.Component {
-
-const Title = props => <h1>{props.title}</h1>
-
-
-}
-
-export default Title;
+const Title = (props) => (
+    <div>
+        <h1>
+            Number of your tasks:
+            {props.titleNumber}
+        </h1>
+    </div>
+);
