@@ -8,7 +8,8 @@ class App extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            data: []
+            data: [],
+            taskNumber: 0
         };
     }
     addTodo(val){
@@ -26,7 +27,7 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
-                <Title/>
+                <Title>{Title.taskNumber}</Title>
             </div>
         );
     }
